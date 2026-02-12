@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu Ponto</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background-color: #F6FAFD;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .container {
+        background-color: #0A1931;
+        width: 95%;
+        max-width: 900px;
+        border-radius: 12px;
+        padding: 25px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        color: #F6FAFD;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    header h1 {
+        font-size: 28px;
+        letter-spacing: 3px;
+        color: #B3CFE5;
+    }
+
+    .logo {
+        margin-top: 10px;
+        height: 60px;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .perfil-area {
+        flex: 1 1 250px;
+        text-align: center;
+    }
+
+    .perfil-area img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #4A7FA7;
+        margin-bottom: 15px;
+    }
+
+    .info {
+        background-color: #1A3D63;
+        padding: 15px;
+        border-radius: 8px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .info span {
+        color: #B3CFE5;
+        font-weight: bold;
+    }
+
+    .qr-area {
+        flex: 1 1 200px;
+        text-align: center;
+    }
+
+    .qr-area img {
+        width: 160px;
+        max-width: 100%;
+        border-radius: 8px;
+        border: 3px solid #4A7FA7;
+        background-color: #ffffff;
+        padding: 5px;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 25px;
+        font-size: 14px;
+        color: #B3CFE5;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .content {
+            flex-direction: column;
+        }
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>MEU PONTO</h1>
+        <img src="logo.png" alt="Logotipo" class="logo">
+    </header>
+
+    <div class="content">
+
+        <div class="perfil-area">
+            <img src="perfil.jpg" alt="Foto de Perfil">
+            <div class="info">
+                <p><span>Setor:</span> Suporte</p>
+                <p><span>Nome:</span> Admin</p>
+                <p><span>PIN:</span> 2026</p>
+            </div>
+        </div>
+
+        <div class="qr-area">
+            <h3 style="margin-bottom:10px; color:#B3CFE5;">QR CODE</h3>
+            <img src="qrcode.jpg" alt="QR Code">
+        </div>
+
+    </div>
+
+    <footer>
+        Sistema de Identificação Interno
+    </footer>
+
+</div>
+
+</body>
+</html>
